@@ -41,4 +41,67 @@ Prédire la souscription à un dépôt à terme (oui/non).
 ## Références
 - Article de base : Sérgio Moro, P. Cortez & P. Rita (2014), Decision Support Systems.
 - DOI : [10.24432/C5K306](https://doi.org/10.24432/C5K306)
+- # Description des Champs du Jeu de Données Bank Marketing
+
+- **age**  
+  Âge du client (entier).
+
+- **job**  
+  Type d'emploi (catégoriel) :  
+  "admin.", "blue-collar", "entrepreneur", "housemaid", "management",  
+  "retired", "self-employed", "services", "student", "technician",  
+  "unemployed", "unknown".
+
+- **marital**  
+  Statut marital (catégoriel) :  
+  "divorced" (divorcé ou veuf), "married", "single", "unknown".
+
+- **education**  
+  Niveau d'éducation (catégoriel) :  
+  "basic.4y", "basic.6y", "basic.9y", "high.school",  
+  "illiterate", "professional.course", "university.degree", "unknown".
+
+- **default**  
+  Crédit en défaut ? (binaire) : "yes", "no".
+
+- **balance**  
+  Solde annuel moyen en euros (entier).
+
+- **housing**  
+  Possède un prêt immobilier ? (binaire) : "yes", "no".
+
+- **loan**  
+  Possède un prêt personnel ? (binaire) : "yes", "no".
+
+- **contact**  
+  Type de contact lors du dernier appel (catégoriel) :  
+  "cellular", "telephone", "unknown".
+
+- **day**  
+  Jour du mois du dernier contact (entier).
+
+- **month**  
+  Mois du dernier contact (catégoriel) :  
+  "jan", "feb", "mar", ..., "nov", "dec".
+
+- **duration**  
+  Durée du dernier contact en secondes (entier).
+
+- **campaign**  
+  Nombre total de contacts effectués durant cette campagne pour ce client (entier).
+
+- **pdays**  
+  Nombre de jours passés depuis le dernier contact lors d'une campagne précédente (entier) ;  
+  -1 signifie que le client n’a jamais été contacté auparavant.
+
+- **previous**  
+  Nombre de contacts avant cette campagne pour ce client (entier).
+
+- **poutcome**  
+  Résultat de la précédente campagne marketing (catégoriel) :  
+  "unknown", "other", "failure", "success".
+
+- **y**  
+  Variable cible : le client a-t-il souscrit un dépôt à terme ? (binaire) : "yes", "no".
+
 
