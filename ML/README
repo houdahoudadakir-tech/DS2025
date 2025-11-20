@@ -1,1 +1,70 @@
+1. Présentation du jeu de données
 
+Ce jeu de données provient d’une étude réalisée par l’Université de Porto au Portugal dans le cadre d’un projet de data science sur la qualité des vins. Il est issu du site scientifique UCI Machine Learning Repository, une source très fiable utilisée mondialement pour l’apprentissage automatique.
+
+Il contient deux types de vins :
+
+Type de vin	Fichier	Nombre d’observations	Nombre de variables
+Rouge	winequality-red.csv	1 599	12
+Blanc	winequality-white.csv	4 898	12
+
+Source scientifique originale :
+Wine Quality Data Set – UCI Machine Learning Repository.
+(les données sont déjà présentes dans ton fichier, donc la source est authentique)
+
+🧪 2. Type de données et variables
+
+Chaque vin est décrit par 11 caractéristiques chimiques et un score de qualité (target pour l’analyse prédictive).
+
+Variable	Description
+fixed acidity	acidité non volatile
+volatile acidity	acidité volatile (impacte odeur)
+citric acid	acidité citrique
+residual sugar	sucre résiduel
+chlorides	taux de sel
+free sulfur dioxide	SO₂ libre
+total sulfur dioxide	SO₂ total
+density	densité du vin
+pH	niveau d’acidité
+sulphates	sulfates
+alcohol	taux d’alcool
+quality	note de qualité (0 à 10)
+🎯 3. Objectif du projet (ce que tu peux faire)
+
+Ce dataset est idéal pour :
+✔ Classification : prédire si un vin est bon / moyen / mauvais
+✔ Régression : prédire la note exacte de la qualité du vin
+✔ Détection de corrélations entre la chimie du vin et sa qualité
+✔ Analyse statistique descriptive
+
+📊 4. Aperçu technique
+
+Tu disposes de :
+
+# Dimensions du dataset
+red.shape  → (1599, 12)
+white.shape → (4898, 12)
+
+
+Cela signifie :
+
+Beaucoup plus de vins blancs → tu peux comparer les deux types
+
+12 colonnes → parfait pour un modèle prédictif
+
+📌 5. Première analyse conseillée
+
+
+
+df.describe()
+df['quality'].value_counts()
+df.corr()
+
+
+Et visualiser :
+
+Histogramme de la qualité des vins
+
+Corrélation entre alcool et qualité (souvent très forte 🔍)
+
+Comparaison vin rouge vs vin blanc
